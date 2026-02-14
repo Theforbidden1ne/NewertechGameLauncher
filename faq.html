@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | Newertech Launcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .faq-card { background-color: #1e293b; transition: all 0.3s ease; }
+        .faq-card:hover { border-color: #3b82f6; }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+        <a href="index.html" class="text-2xl font-bold tracking-tighter text-blue-500">PYNEXUS</a>
+        <div class="space-x-6 text-gray-400">
+            <a href="index.html" class="hover:text-white">Home</a>
+            <a href="#" class="text-white border-b-2 border-blue-500 pb-1">Support</a>
+        </div>
+    </nav>
+
+    <section class="py-16 px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">How can we help?</h1>
+        <p class="text-gray-400">Find answers to common questions about the PyNexus Launcher.</p>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-6 pb-20 space-y-4">
+        
+        <div class="faq-card p-6 rounded-xl border border-slate-700">
+            <h3 class="text-lg font-bold flex items-center">
+                <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                The Launcher says "Server Offline". What do I do?
+            </h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">
+                This usually means the central Game Store API is undergoing maintenance or your internet connection is blocked by a firewall. Check your connection or try restarting the launcher as an Administrator.
+            </p>
+        </div>
+
+        <div class="faq-card p-6 rounded-xl border border-slate-700">
+            <h3 class="text-lg font-bold flex items-center">
+                <i class="fas fa-exclamation-triangle text-blue-500 mr-3"></i>
+                A Unity game won't start after downloading.
+            </h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">
+                Ensure you have the <strong>DirectX End-User Runtimes</strong> and <strong>Visual C++ Redistributable</strong> installed. If the game crashes immediately, try deleting the game folder in <code class="bg-slate-900 px-2 py-1 rounded">/installed_games/</code> and clicking "Download" again.
+            </p>
+        </div>
+
+        <div class="faq-card p-6 rounded-xl border border-slate-700">
+            <h3 class="text-lg font-bold flex items-center">
+                <i class="fas fa-shield-alt text-blue-500 mr-3"></i>
+                Windows Defender flagged the Launcher as a virus.
+            </h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">
+                Because the launcher is an "unrecognized" app compiled with PyInstaller, Windows may flag it. You can safely click "More Info" and "Run Anyway." As an open-source project, you can always inspect the code on our GitHub.
+            </p>
+        </div>
+
+        <div class="faq-card p-6 rounded-xl border border-slate-700">
+            <h3 class="text-lg font-bold flex items-center">
+                <i class="fas fa-folder text-blue-500 mr-3"></i>
+                Where are my games installed?
+            </h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">
+                By default, all games are downloaded into the <code class="bg-slate-900 px-2 py-1 rounded">installed_games</code> directory located in the same folder as your <code class="bg-slate-900 px-2 py-1 rounded">launcher.exe</code>.
+            </p>
+        </div>
+        <div class="faq-card p-6 rounded-xl border border-slate-700">
+            <h3 class="text-lg font-bold flex items-center">
+                <i class="fas fa-folder text-blue-500 mr-3"></i>
+                Will there be any native modding support?
+            </h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">
+                For now, no. Unfortunately, there is no easy way to implement a modloader solution for EVERY possible game we host, not do I have the willpower to do so. It will be implemented later in development but as of right now, no.
+            </p>
+        </div>
+
+    </main>
+
+    <section class="bg-blue-600 py-12 text-center px-6">
+        <h2 class="text-2xl font-bold mb-4">Still need help?</h2>
+        <p class="mb-8 opacity-90">Open an issue on our GitHub repository for technical support.</p>
+        <a href="https://github.com/theforbidden1ne/NewertechGameLauncher/issues" 
+           class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+            Contact Developers
+        </a>
+    </section>
+
+    <footer class="text-center py-10 text-gray-600 text-sm">
+        &copy; Copyright 2026 Newertech LLC, All rights reserved.
+    </footer>
+
+</body>
+</html>
